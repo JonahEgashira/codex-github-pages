@@ -41,9 +41,6 @@ title: はじめに
 * **GPT-5**：OpenAIが開発している言語モデル群の総称。テキスト・画像・音声などを扱える基盤モデルで、アプリやAPIから呼び出されます。
 * **Codex CLI**：そのモデルを呼び出しつつ、ツール（ファイル操作・シェルコマンド・Webからのデータ取得など）を自分のPCやサーバー上で実行できるエージェント実行環境です。
 
-![Codex CLI Check](./images/gemini-cli-check.png)
-*Codex CLIが講義資料を校正する様子*
-
 <details markdown="1"><summary>💡 API と CLI とは</summary>
 
 ### APIとは
