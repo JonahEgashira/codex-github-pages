@@ -37,7 +37,7 @@ Gemini CLI（または同種のエージェントCLI。例: Claude CodeやCodex 
 ├── _config.yml
 ├── 01-introduction.md
 ├── 02-github-codex.md
-├── 03-build-with-gemini.md
+├── 03-build-with-codex.md
 ├── 04-deploy-github-pages.md
 ├── 05-style-and-js.md
 ├── 06-tips-and-tricks.md

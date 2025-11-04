@@ -151,5 +151,5 @@ npx @google/gemini-cli
 - 組織アカウントで認可がブロックされる場合は、個人アカウントでのログインや別ブラウザーでの再試行を検討
 
 前へ → [はじめに](./01-introduction.md)
-次へ → [Gemini CLI でサイト作成](./03-build-with-gemini.md)
+次へ → [Gemini CLI でサイト作成](./03-build-with-codex.md)
 目次へ → [ホーム](./index.md)

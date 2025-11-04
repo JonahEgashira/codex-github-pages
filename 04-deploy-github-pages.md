@@ -97,6 +97,6 @@ Webページに変更を加えてpushした後、何らかの理由でデプロ�
 - リポジトリをPrivateにしている場合、Pagesの公開可否や可視性に注意（学習用はPublic推奨）
 - `Settings → Pages` が表示されない、またはグレーアウトしている場合は、権限設定やリポジトリの可視性、組織ポリシーを確認してください。
 
-前へ → [Gemini CLIでサイト作成](./03-build-with-gemini.md)
+前へ → [Gemini CLIでサイト作成](./03-build-with-codex.md)
 次へ → [CSS/JavaScript で拡張](./05-style-and-js.md)
 目次へ → [ホーム](./index.md)
