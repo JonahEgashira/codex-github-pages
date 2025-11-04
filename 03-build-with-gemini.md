@@ -1,66 +1,44 @@
----
 layout: default
-title: Gemini CLIでサイト作成
+title: Codex CLIでサイト作成
+----------------------
+
+# Codex CLIでWebサイトを作成する
+
+Codex CLIのインストールが完了したら、実際にWebサイトを作っていきましょう。
+
 ---
 
-# Gemini CLIでWebサイトを作成する
+## Codexに依頼する
 
-Gemini CLIのインストールが完了したら、実際にWebサイトを作っていきましょう。
+Codex CLIに対する入力と、ターミナル上で入力するコマンドを区別するため、今後、Codex CLIに対する入力には`user>`を先頭に付けて記述します。
 
-## Geminiに依頼する
-
-Gemini CLIに対する入力と、ターミナル上で入力するコマンドを区別するため、今後、Gemini CLIに対する入力には`user>`を先頭に付けて記述します。
 ```bash
-user> ここにGeminiへのメッセージ、プロンプトが入ります。
+user> ここにCodexへのメッセージ、プロンプトが入ります。
 ```
 
-注: 上の `user>` は資料上の記法です。実際のGemini CLIには `user>` を付ける必要はありません。
+> 注: 上の `user>` は資料上の記法です。実際のCodex CLIには `user>` を付ける必要はありません。
 
-では、早速GeminiにHTMLファイルを作ってもらいましょう。
+では、早速CodexにHTMLファイルを作ってもらいましょう。
+
 ```bash
 user> このリポジトリは、GitHub Pagesで公開する自分のWebサイトです。index.htmlを新規作成し、シンプルなHTMLを用意してください。
 ```
 
-![Gemini HTML](./images/gemini-html.png)
+![Codex HTML](./images/index-codex.png)
 
-Gemini CLIがHTMLファイルを作成すると同時に、以下のような表示が出てくると思います。
-これは、Gemini CLIがコマンドを実行する際に、実行するコマンドについてユーザーに許可を求めています。
 
-![Gemini Confirmation](./images/gemini-confirm.png)
-
-## Gemini CLIのコマンド実行時の確認と許可
-
-Gemini CLIは、ファイルの作成・編集・削除など多くの操作を代わりに実行します。誤操作を防ぐため、実行前に「何をどう変えるか」を表示し、内容を確認してから許可を求めます。
-
-```bash
-1. Yes, allow once             # 今回の変更だけ実行する
-2. Yes, allow always           # 同種の操作を、このセッション中は常に許可する
-3. Modify with external editor # 外部エディターで自分で編集する
-4. No, suggest changes (esc)   # 今回は実行せず、代案を提案する
-```
-
-通常は1の「Yes, allow once」を選ぶのが安全です。選択すると、表示された内容どおりにファイルが作成・更新されます。
-
-![Gemini Suggest](./images/gemini-suggest.png)
-
-*4. No, suggest changes (esc)を選択した時の様子。入力受付状態になり、Gemini CLIに対する変更を提案できます。*
-
-### ⚠️許可を出す際の注意
-
-削除系コマンド（`rm`、`rm -rf` など）は特に注意してください。これらに対しては、原則`allow always`を選ばないことを**強く推奨**します。内容に不安がある場合は`4. No, suggest changes`を選び、何をするコマンドかを尋ねるか、別案を提案しましょう。迷ったときは都度`allow once`を選ぶと安全です。
-
-## HTMLファイルを確認する
+## HTMLページを確認する
 
 作成したHTMLページの内容を確認してみましょう。
 まずはじめに、新しいターミナルの画面を作成します。
 
 ターミナルの右上の「＋」を押します。
 
-![codespace-bash](./images/codespace-bash.png)
+![codespace-bash](./images/plus.png)
 
 bashと表示されて新しい画面になったことを確認します。ここで以下の`python`コマンドを入力します。
 
-![bash-new](./images/bash-new.png)
+![bash-new](./images/bash.png)
 
 ターミナルで以下のコマンドを入力してください。
 
@@ -77,29 +55,33 @@ python3 -m http.server 5500
 停止するには、サーバーを起動しているターミナルで `Ctrl + C` を押してください。
 
 【トラブルシュート】
-- 5500番ポートが使用中なら `python3 -m http.server 5501` など別ポートに変更
-- 「Open in Browser」が出ない場合は、VS Code（Codespaces）の「PORTS」タブから該当ポートを手動で開く
-- 画面が更新されない時はファイル保存とブラウザーのリロードを確認
+
+* 5500番ポートが使用中なら `python3 -m http.server 5501` など別ポートに変更
+* 「Open in Browser」が出ない場合は、VS Code（Codespaces）の「PORTS」タブから該当ポートを手動で開く
+* 画面が更新されない時はファイル保存とブラウザーのリロードを確認
 
 ---
 
-### Gemini CLIとターミナルの切り替え
+## Codex CLIとターミナルの切り替え
 
-Gemini CLIに自然言語で依頼をする場所と、ターミナルでコマンドを入力する場所は異なります。
+Codex CLIに自然言語で依頼をする場所と、ターミナルでコマンドを入力する場所は異なります。
 
-`npm`や`node`と表示されることがあるタブがGemini CLI（対話用）で、`bash`と書かれているタブが通常のターミナル（コマンド実行用）です。
-`user>`と先頭に書かれている文書/指示はGemini CLIに入力し、それ以外のコマンドはターミナル上で入力、実行します。
+`npm`や`node`と表示されることがあるタブがCodex CLI（対話用）で、`bash`と書かれているタブが通常のターミナル（コマンド実行用）です。
+`user>`と先頭に書かれている文書/指示はCodex CLIに入力し、それ以外のコマンドはターミナル上で入力・実行します。
 
-![Gemini NPM](./images/gemini-npm.png)
-*Gemini CLIが開かれている状態*
+![Codex NPM](./images/codex-npm.png)
+*Codex CLIが開かれている状態*
+
+---
 
 # HTMLファイルをコミットする
 
-Gitでは「**変更を記録する**」作業を*コミット*と呼びます。ここでは、Gemini CLIが作成した`index.html`をGitHubへアップロードするまでの流れを説明します。
+Gitでは「**変更を記録する**」作業を*コミット*と呼びます。
+ここでは、Codex CLIが作成した`index.html`をGitHubへアップロードするまでの流れを説明します。
 
 まず、`git`コマンドを入力するために、先ほど作成した**ターミナル**の画面で以下を入力します。
 
-![bash-new](./images/bash-new.png)
+![bash new](./images/bash.png)
 
 1. **変更内容を確認する**
 
@@ -114,7 +96,9 @@ Gitでは「**変更を記録する**」作業を*コミット*と呼びます�
    ```bash
    git add index.html        # 1つだけ追加
    ```
-   もしくは
+
+   または
+
    ```bash
    git add .                 # 現在のディレクトリ以下をまとめて追加
    ```
@@ -127,7 +111,7 @@ Gitでは「**変更を記録する**」作業を*コミット*と呼びます�
    git commit -m "Add initial index.html"
    ```
 
-   * `-m`オプションで「*何をしたか*」を1行で書きます。
+   * `-m`オプションで「何をしたか」を1行で書きます。
    * 後から見返すときに分かりやすいよう、内容を簡潔にまとめましょう。
 
 4. **リモート（GitHub）へ反映（プッシュ）する**
@@ -137,9 +121,10 @@ Gitでは「**変更を記録する**」作業を*コミット*と呼びます�
    ```
 
    * `-u`を付けておくと、次回以降は`git push`だけで済みます。
-
    * GitHubでリポジトリを開き、`index.html`がアップロードされていれば成功です。
-   * pushに失敗する場合は、リモートが設定されているか（`git remote -v`）と、ブランチが`main`であるかを確認してください。
+   * pushに失敗する場合は、リモート設定（`git remote -v`）とブランチ名（`main`）を確認してください。
+
+---
 
 ### ここまでの流れのおさらい
 
@@ -149,18 +134,20 @@ git commit -m "Add initial site"
 git push -u origin main
 ```
 
----
-
 > **ポイント**
 >
 > * *add → commit → push* の3段階を覚えれば、基本操作はほぼカバーできます。
 > * こまめなコミットは「戻れるポイント」を増やせるので、失敗しても安心です。
 
-## Gemini CLIを使ってGit操作を行う
+---
+
+## Codex CLIを使ってGit操作を行う
 
 Gitは **バージョン管理において必ず覚えておきたい操作** ですが、
-毎回 `git add . → git commit → git push` して、毎回コミットメッセージを書くのも正直面倒です。
-そこで、Git操作にもGemini CLIを使ってみましょう。
+毎回 `git add . → git commit → git push` して、毎回メッセージを書くのは少し面倒ですよね。
+そこで、Git操作にもCodex CLIを使ってみましょう。
+
+---
 
 ### まずは適当なファイルの変更をする
 
@@ -168,42 +155,46 @@ Codespacesの左側のファイルエクスプローラーを開き、先ほど�
 
 ![Change Title](./images/change-title.png)
 
-おそらく、 `<title></title>`で囲われた部分があると思います。
+おそらく `<title></title>` で囲われた部分があると思います。
 
-その部分を手動で以下のように変更します。（「私のWebページ」の部分は他の内容でもよいです）
+その部分を手動で以下のように変更します（「私のWebページ」の部分は他の内容でも構いません）。
+
 ```html
 <title>私のWebページ</title>
 ```
 
-これで変更は完了です。次に、Gemini CLIで変更をGitで管理しましょう。
+これで変更は完了です。次に、Codex CLIで変更をGitで管理しましょう。
 
 ---
 
 ### 1行でpushまでを丸投げ
 
-次のように依頼をすると、今回のファイルの変更を、一連の流れで`git add`, `git commit`, `git push`まで行うことができます。
+次のように依頼をすると、今回のファイル変更を一連の流れで `git add`, `git commit`, `git push` まで行うことができます。
 
 ```bash
 user> 変更を確認してpushしてください
 ```
 
-![Gemini-git-add](./images/gemini-git-add.png)
+![Codex git add](./images/commit.png)
 
-`git status`という変更を確認するコマンドを実行しようとしています。`1. Yes, allow once`を選択し続行します。
+Pushにはネットワークアクセスが必要なため、Codexが許可を求めてきています。
+`1. Yes, proceed`を選択し、Pushしましょう。
 
-![Gemini-commit-push](./images/gemini-commit-push.png)
+![Codex commit push](./images/push.png)
 
-その後、Geminiの提案に従って`allow`していくと、簡単にpushまで完了できます。
+これでadd, commit, pushまで完了です。
 
 > **ポイント**
-> Gemini CLIは*「ユーザーの意図 → 具体的なGitコマンド」*を橋渡ししてくれます。
-> **コマンドの暗記やタイプミスに悩まされず、作業スピードも向上します**（が、最低限add、commit、pushは覚えましょう）
+> Codex CLIは *「ユーザーの意図 → 具体的なGitコマンド」* を橋渡ししてくれます。
+> **コマンドの暗記やタイプミスに悩まされず、作業スピードも向上します**（ただし、最低限 add・commit・push は覚えておきましょう）
 
-これで Git の日常的な “ルーチン作業” はほぼ Gemini CLI にお任せできます。
-浮いた時間と集中力を **コンテンツの制作やデザインの改善** に充てましょう。
+これで Git の日常的なルーチン作業はほぼ Codex CLI に任せられます。
+浮いた時間と集中力を **コンテンツ制作やデザイン改善** に充てましょう。
 
 ---
 
 前へ → [開発環境の準備](./02-environment.md)
 次へ → [GitHub Pages へデプロイ](./04-deploy-github-pages.md)
 目次へ → [ホーム](./index.md)
+
+---
