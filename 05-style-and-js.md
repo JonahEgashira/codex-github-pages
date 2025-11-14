@@ -14,7 +14,7 @@ Codespacesのタブを選択し、緑色の🟢Activeとなっているものが
 
 ここからCodespaceを開くことで、前回の作業途中から再開できます。
 
-Codespaceが開けたら、ターミナルで`npx @google/gemini-cli`を実行して、Gemini CLIを起動しましょう。
+Codespaceが開けたら、ターミナルで`codex`を実行して、Codex CLIを起動しましょう。
 
 もしターミナルが開かれていない場合は、左上の画像の赤丸のボタンを押すことで、表示/非表示を切り替えできます。
 
@@ -23,15 +23,15 @@ Codespaceが開けたら、ターミナルで`npx @google/gemini-cli`を実行�
 ## 1. HTMLでコンテンツを増やす
 
 HTMLファイルだけのWebサイトでは見た目が寂しいので、内容と見た目を改善しましょう。
-まずはGemini CLIを使って（もしくは手動で）、HTMLのコンテンツを増やします。
+まずはCodex CLIを使って（もしくは手動で）、HTMLのコンテンツを増やします。
 
 ```bash
 user> index.htmlを自己紹介ページにしたいです。私があなたの質問に答えるので、その内容を基にページのコンテンツを作って。
 ```
 
-![Gemini-Intro](./images/gemini-intro.png)
+![Gemini-Intro](./images/codex-intro.png)
 
-Gemini CLIがどんな内容を追加したいのか聞いてくるので、対話しながらページの内容を決めてください。
+Codex CLIがどんな内容を追加したいのか聞いてくるので、対話しながらページの内容を決めてください。
 
 ## 画像を追加する（オプション）
 
@@ -45,44 +45,26 @@ Webページ上に画像を追加するには次のようにします。
 
 ![Dorachan](./images/dorachan.png)
 
-3. Gemini CLIにファイル名（ここでは`dorachan.png`を伝え、Webサイトに追加するように依頼します）
+3. Codex CLIにファイル名（ここでは`dorachan.png`を伝え、Webサイトに追加するように依頼します）
 
 ```bash
 user> dorachan.pngをHTMLに追加してください。
 ```
 
-これでおそらく、Gemini CLIが画像をHTMLに追加してくれるはずです。もしうまく行かない場合はちゃんと画像がファイルエクスプローラーに追加されているか、ファイル名がGemini CLIに伝えたものと同じか（厳密に同じでなくても、Gemini CLIがコマンド操作によって近しいファイルを選択するはずですが）を確認してください。
-
-<details markdown="1"><summary>💡 Gemini CLIが表示する編集画面（Diff）について</summary>
-
-Gemini CLIがファイルの内容を変更するとき、緑や赤のハイライトで表示される差分（Diff）がユーザーに提示されます。
-**Diff（差分）表示**とは、ファイルの変更内容を視覚的に表示する方法です。
-
-### 🔍 Diffの見方
-
-- **緑色の行（+で始まる）**：新しく追加された内容
-- **赤色の行（-で始まる）**：削除された内容
-- **白色の行**：変更されていない内容
-
-![Gemini-Diff](./images/gemini-diff.png)
-</details>
-
-このDiffの表記はGitなどのバージョン管理システムでよく使用されます。
+これでおそらく、Codex CLIが画像をHTMLに追加してくれるはずです。もしうまく行かない場合はちゃんと画像がファイルエクスプローラーに追加されているか、ファイル名がCodex CLIに伝えたものと同じか（厳密に同じでなくても、Codex CLIがコマンド操作によって近しいファイルを選択するはずですが）を確認してください。
 
 ## 2. CSSを追加する
 
 ### CSSとは
 CSS（Cascading Style Sheets）は、見た目を定義する言語です。CSSを使うと、文字の色やフォント、背景色、レイアウトなどを簡単に変えられます。HTMLがページの骨組みを作るのに対し、CSSはその見た目を整えます。
 
-### Gemini CLIに頼んでCSSを追加する
+### Codex CLIに頼んでCSSを追加する
 
 ```bash
 user> index.htmlの見た目をよくするために、CSSファイルを追加して、スタイリングを行ってください。
 ```
 
-![Gemini CSS](./images/gemini-css.png)
-
-Gemini CLIが、`style.css`ファイルを作成し、スタイルを記述するコードを生成していることが確認できます。
+Codex CLIが、`style.css`ファイルを作成し、スタイルを記述するコードを生成していることが確認できます。
 また、`index.html`でそのCSSファイルを読み込んでスタイルを適用するために、HTMLファイルにも編集を加えています。
 
 変更を加えたら、ターミナル上で`python3 -m http.server 5500`を実行してブラウザー上で変更を確認してみましょう。
@@ -93,7 +75,7 @@ Gemini CLIが、`style.css`ファイルを作成し、スタイルを記述す�
 
 シンプルな白黒の見た目から、少し豪華になりました。
 
-Gemini CLIと対話して、好きなスタイルを作ってみましょう。
+Codex CLIと対話して、好きなスタイルを作ってみましょう。
 
 ## CSSスタイルのアイデア例
 
@@ -120,14 +102,11 @@ user> どうぶつの森風の可愛いデザインにしてください。
 ### JavaScriptとは
 JavaScriptは、Webページに動的な機能を追加するためのプログラミング言語です。ユーザーの操作に応じてページの内容を変更したり、アニメーションを追加したり、データを処理したりすることができます。HTMLとCSSがWebページの構造と見た目を担当するのに対し、JavaScriptはインタラクティブな要素を提供します。
 
-Gemini CLIを使って、JavaScriptを追加し、ページにインタラクティブな要素を加えてみましょう。
+Codex CLIを使って、JavaScriptを追加し、ページにインタラクティブな要素を加えてみましょう。
 
 ```bash
 user> JavaScriptを使って、ページにタイピング風のアニメーションを追加したい。
 ```
-
-![Gemini JS](./images/gemini-js.png)
-
 
 ![Gemini JS1](./images/gemini-js1.gif)
 
@@ -350,7 +329,7 @@ user> three.jsを使って、ブロックが上からピラミッド上に積み
 ![three.js](./images/3d.gif)
 
 ここで紹介したページのアイデアの例は[こちら](https://jonahegashira.github.io/my-site/)にあります。
-このページもGemini CLI + GitHub Pagesで作成されています。
+このページもCodex CLI + GitHub Pagesで作成されています。
 
 ---
 
