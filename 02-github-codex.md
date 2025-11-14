@@ -109,22 +109,34 @@ Codespaces/VS Codeの画面構成について簡単に説明します。
 
 ---
 
-# Codex CLIの起動
+# Codex CLIのインストール
 
 それでは実際にCodespaces上でCodex CLIを動かしてみましょう。
 
-Codespaces のターミナルで以下を実行します。
+まず、Codespacesのターミナルで以下のコマンドを実行し、Codex CLIをインストールします。
 実行は、このコマンドをターミナルに入力（コピー＆ペースト）し、Enterキーを押すことでできます。
 
 ```bash
-npx @openai/codex
+npm i -g @openai/codex
 ```
 
-`npx`コマンドでCodex CLIがCodespaces上のマシンにインストールされ、実行されます。
+このコマンドで、Codex CLIがCodespaces上のマシンにグローバルにインストールされます。
 
 ![codespace-codex](./images/codespace-codex.png)
 
-`npx @openai/codex`を実行すると、以下のように回転するロゴが表示されます。
+---
+
+# Codex CLIの起動
+
+インストールが完了したら、以下のコマンドでCodex CLIを起動します。
+
+```bash
+codex
+```
+
+実行すると、以下のように回転するロゴが表示されます。
+
+![codex-start](./images/codex-start.png)
 
 ![codex logo](./images/codex.gif)
 
