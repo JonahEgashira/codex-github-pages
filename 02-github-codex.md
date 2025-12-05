@@ -153,6 +153,46 @@ ChatGPTに課金している人は 1. の Sign in with ChatGPT を選択して�
 成功すると、上記のような画面になります。
 失敗する場合はもう一度APIキーをペーストし直してみてください。
 
+# モデルの選択
+
+一昔前はGPT-4oだったのが、いまはGPT-5.1になっているように、Codexでも複数のモデルが存在します。
+本講習ではWebページの制作という比較的シンプルな作業をおこなうので、高速かつコスト効率のよいモデルを選択します。
+
+Codexを起動している画面で、
+
+```
+/model
+```
+
+と入力してください。
+
+![codex-model-select](./images/model-select.png)
+
+すると、このようにどのモデルを選択するかの画面が出てきます。
+`gpt-5.1-codex-mini` を選択（キーボードの上下矢印キーで移動）し、Enterキーを押します。
+
+![codex-mini](./images/codex-mini.png)
+
+すると、Reasoning Levelの選択画面に移ります。
+Reasoningとは、AIが考えるプロセスのことであり、ReasoningのLevelを上げると、AIがより多く考えて良い答えが返ってくる可能性が高まります。
+
+しかし、静的なWebサイトのコーディングにはそこまでの「考える」プロセスは必要ないので、`default`を選択します。
+
+![reasoning](./images/reasoning.png)
+
+<details markdown="1">
+<summary>どんな時にReasoningが必要？</summary>
+以下のようなケースでは、Reasoningがあるとより良い結果を得られやすいです。
+
+- バグの原因特定
+- アルゴリズムの設計・選定
+- コードレビューでの問題発見
+- 複雑なデータ分析
+- 数学の問題
+
+Reasoningをおこなうようにすると、その分解答にかかる時間も増えるので、Codex CLIに限らず、普段生成AIを使用するときも使い分けを意識するとよいかもしれません。
+</details>
+
 ---
 
 ### 補足
