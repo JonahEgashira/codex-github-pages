@@ -13,7 +13,7 @@
 
 初めての方は 1 から順に読み進めてください。改善提案や修正は PR を出してくれると助かります。
 
-## [WebページURL](https://jonahegashira.github.io/gemini-github-pages/)
+## [WebページURL](https://jonahegashira.github.io/codex-github-pages/)
 
 講義中の質問やコメントはこちらへ：[掲示板](./board.html)
 技術構成の解説はこちら：[技術構成](./architecture.md)
