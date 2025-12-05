@@ -104,7 +104,6 @@ Webサイトを公開したり、開発を行う上では **GitHub アカウン�
 
 ---
 
-前へ → [ホーム](./index.md)
 次へ → [開発環境（Codespaces など）](./02-github-codex.md)
 目次へ → [ホーム](./index.md)
 
