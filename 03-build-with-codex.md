@@ -1,6 +1,7 @@
+---
 layout: default
 title: Codex CLIでサイト作成
-----------------------
+---
 
 # Codex CLIでWebサイトを作成する
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: おわりに
+---
+
 ## おわりに
 
 この講習会では、Codex CLIを使用してGitHub Pages上にWebサイトを構築する方法を学びました。以下に主要なポイントをまとめます：
