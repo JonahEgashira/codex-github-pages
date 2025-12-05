@@ -64,7 +64,8 @@ user> @apple-hp.png このAppleのホームページの画像を参考にして�
 ![Gemini Apple](./images/gemini-apple.png)
 
 ---
-# Codex CLIコマンド
+
+## Codex CLIコマンド
 
 Codex CLIとの対話画面で`/`から始まるコマンドを入力することで便利な機能を利用できます。
 ここではその中からいくつかを紹介します。
@@ -113,3 +114,5 @@ ChatGPTやClaudeなどの大規模言語モデル（LLM）は、会話が長く�
 前へ → [CSS/JavaScriptで拡張](./05-style-and-js.md)
 次へ → [おわりに](./07-outro.md)
 目次へ → [ホーム](./index.md)
+
+---

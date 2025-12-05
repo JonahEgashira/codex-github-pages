@@ -100,3 +100,5 @@ Webページに変更を加えてpushした後、何らかの理由でデプロ�
 前へ → [Codex CLIでサイト作成](./03-build-with-codex.md)
 次へ → [CSS/JavaScript で拡張](./05-style-and-js.md)
 目次へ → [ホーム](./index.md)
+
+---
