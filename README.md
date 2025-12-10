@@ -11,16 +11,14 @@
 - 6. Tips・検索・画像添付: [06-tips-and-tricks.md](./06-tips-and-tricks.md)
 - 7. おわりに: [07-outro.md](./07-outro.md)
 
-初めての方は 1 から順に読み進めてください。改善提案や修正は PR を出してくれると助かります。
-
 ## [WebページURL](https://jonahegashira.github.io/codex-github-pages/)
 
-講義中の質問やコメントはこちらへ：[掲示板](./board.html)
-技術構成の解説はこちら：[技術構成](./architecture.md)
+↓講義中の質問やコメントはこちらへ↓
+### [掲示板](https://lecture-board.jonah-342.workers.dev/)
 
-本講義では時間の都合上、GitHub Codespaces 上で Codex CLI を使用します。
-ご自身の PC に環境を構築すれば、手元のファイルも Codex CLI で操作できます。開発にある程度慣れている方や、興味のある方は次のリンクをご参照ください。
+---
 
-- [ローカル環境構築編](./local-setup.md)
-- [ローカルエージェントCLI活用術](./agent-cli-local.md)
-- [最新エージェントCLI選定](./agent-latest.md)
+開発に本格的に取り組んでみたい方は、GitHub Codespaces上ではなく手元のPCに環境を構築することをおすすめします。
+以下の記事ではローカルにGemini CLIを導入する方法を紹介しています。
+
+- [ローカル環境構築](./local-setup.md)
