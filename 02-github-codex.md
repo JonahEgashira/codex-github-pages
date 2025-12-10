@@ -142,11 +142,11 @@ codex
 ![codex logo](./images/codex.gif)
 
 ここで、2. の **Provide your own API key**を選択しましょう。
-ChatGPTに課金している人は 1. の Sign in with ChatGPT を選択してもOKです（課金プランの範囲内で利用でき、追加の料金を取られることはありません）
+ChatGPTに課金している方は 1. の Sign in with ChatGPT を選択してください（課金プランの範囲内で利用でき、追加の料金を取られることはありません）
 
 ![api key](./images/api-key.png)
 
-ここの**API key**と書いてあるところに、メールで送信したAPIキーをペーストしましょう。
+ここの**API key**と書いてあるところに、APIキーをペーストしましょう。
 
 ![codex-ok](./images/codex-ok.png)
 
