@@ -144,6 +144,12 @@ codex
 ここで、2. の **Provide your own API key**を選択しましょう。
 ChatGPTに課金している方は 1. の Sign in with ChatGPT を選択してください（課金プランの範囲内で利用でき、追加の料金を取られることはありません）
 
+### ChatGPTの課金プランを利用する人へ
+GitHub Codespacesで、ChatGPTアカウントを使ってサインインする時に、少し工夫が必要になります。
+以下の記事を参考に（講義中でも紹介します）サインインしてください。
+
+[GitHub Codespaces上でCodex CLIのライセンスを認証する方法](https://zenn.dev/haru_iida/articles/sign_in_codex_with_codespaces)
+
 ![api key](./images/api-key.png)
 
 ここの**API key**と書いてあるところに、APIキーをペーストしましょう。
@@ -154,7 +160,7 @@ APIキーは[掲示板](https://lecture-board.jonah-342.workers.dev/)から取�
 成功すると、上記のような画面になります。
 失敗する場合はもう一度APIキーをペーストし直してみてください。
 
-# モデルの選択
+# 重要：モデルの選択
 
 一昔前はGPT-4oだったのが、いまはGPT-5.1になっているように、Codexでも複数のモデルが存在します。
 本講習ではWebページの制作という比較的シンプルな作業をおこなうので、高速かつコスト効率のよいモデルを選択します。
