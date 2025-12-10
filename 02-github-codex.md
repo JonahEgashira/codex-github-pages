@@ -147,6 +147,7 @@ ChatGPTに課金している方は 1. の Sign in with ChatGPT を選択して�
 ![api key](./images/api-key.png)
 
 ここの**API key**と書いてあるところに、APIキーをペーストしましょう。
+APIキーは[掲示板](https://lecture-board.jonah-342.workers.dev/)から取得できます。
 
 ![codex-ok](./images/codex-ok.png)
 
