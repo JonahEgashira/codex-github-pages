@@ -20,7 +20,7 @@ Codex CLIとGitHubを活用してWebサイトを作成、公開する手法が�
 
 ---
 
-講義中の質問やコメントはこちらへ
+↓講義中の質問やコメントはこちらへ↓
 ### [掲示板](https://lecture-board.jonah-342.workers.dev/)
 
 ---
