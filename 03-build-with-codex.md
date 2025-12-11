@@ -194,6 +194,39 @@ Pushにはネットワークアクセスが必要なため、Codexが許可を�
 
 ---
 
+## VSCodeのGUIを使ったGit操作
+
+VSCode（GitHub Codespaces上で動いているエディター）は開発のための様々な便利を備えています。
+VSCode上のボタンを操作することでも、`git add`, `git commit`, `git push`は簡単にできます。
+
+### Add
+
+左側の虫眼鏡の下にある、丸が繋がっているようなアイコンを押すと、このような表示になります。
+もしコードに変更が加えられている場合、`Changes`の下に、変更済みのファイルが一覧で出てきます。
+
+`Changes`の右にある`+`ボタンを押すと、変更があったファイルを全て`add`することができます。
+
+![add-vs](./images/add-vs.png)
+
+### Commit
+
+Addすると、`Staged Changes`にAddしたファイルが追加されているのが確認できます。
+ステージに追加されたファイルをコミットするには、コメント（どんな変更をしたか）が必要なので、
+`Changes`の下にある入力欄にコメントを入力します。
+
+入力したら、`✅Commit`を押して、コミット完了です。
+
+![commit-vs](./images/commit-vs.png)
+
+### Push
+
+コミットまでできれば、あとは簡単です。
+`Sync Changes`を押せば、リモートのGitHubリポジトリに変更を同期できます。
+
+![push-vs](./images/push-vs.png)
+
+---
+
 前へ → [開発環境の準備](./02-github-codex.md)
 次へ → [GitHub Pages へデプロイ](./04-deploy-github-pages.md)
 目次へ → [ホーム](./index.md)
