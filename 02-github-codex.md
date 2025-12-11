@@ -141,19 +141,22 @@ codex
 
 ![codex logo](./images/codex.gif)
 
-ここで、2. の **Provide your own API key**を選択しましょう。
-ChatGPTに課金している方は 1. の Sign in with ChatGPT を選択してください（課金プランの範囲内で利用でき、追加の料金を取られることはありません）
+ここで、ChatGPTの課金プランを利用している方は[1. ChatGPTの課金プランを利用する人](#1-chatgptの課金プランを利用する人)を、していない方は[2. APIキーを利用する人](#2-apiキーを利用する人)を参考に進めてください。
+課金プラン利用している方は、プランの範囲内で利用でき、追加の料金を取られることはありません。
 
-### ChatGPTの課金プランを利用する人へ
+### 1. ChatGPTの課金プランを利用する人
 GitHub Codespacesで、ChatGPTアカウントを使ってサインインする時に、少し工夫が必要になります。
 以下の記事を参考に（講義中でも紹介します）サインインしてください。
 
 [GitHub Codespaces上でCodex CLIのライセンスを認証する方法](https://zenn.dev/haru_iida/articles/sign_in_codex_with_codespaces)
 
+### 2. APIキーを利用する人
+
 ![api key](./images/api-key.png)
 
 ここの**API key**と書いてあるところに、APIキーをペーストしましょう。
 APIキーは[掲示板](https://lecture-board.jonah-342.workers.dev/)から取得できます。
+掲示板ページにアクセスする時はユーザーネームとパスワードが必要になります。その情報は講義中にスライドでお伝えします。
 
 ![codex-ok](./images/codex-ok.png)
 
