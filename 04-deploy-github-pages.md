@@ -7,11 +7,11 @@ title: GitHub Pagesへデプロイ
 
 サイトの内容を増やしたり、見た目を豪華にするのは後々に取り組むとして、作成したHTMLファイルをWeb上に公開してみましょう。サイトの公開にはGitHub Pagesを利用します。
 
-## GitHub Pagesとは
+## GitHub Pages
 
 GitHub Pagesは、GitHubが提供するサービスで、簡単にWebサイトを公開できる場所です。GitHubに保存したHTML、CSS、JavaScriptのファイルを使って、無料でWebサイトを公開できます。
 
-### デプロイとは
+### デプロイ
 
 デプロイ（Deploy）とは、開発したアプリケーションやWebサイトを実際にユーザーがアクセスできる環境に配置することを指します。GitHub Pagesを使うと、リポジトリにあるコードを簡単にWeb上に公開（デプロイ）することができます。
 
