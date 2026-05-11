@@ -5,7 +5,7 @@ title: Codex CLI Tips
 
 # Codex CLI Tips
 
-Codex CLIは複数の機能を実行できるAIエージェントなので、Webサイトを構築する以外にも、数多くのことができます。詳細は[公式ドキュメント](https://platform.openai.com/docs/)をご覧ください。ここでは便利な機能をいくつか紹介します。
+Codex CLIは複数の機能を実行できるAIエージェントなので、Webサイトを構築する以外にも、数多くのことができます。詳細は[Codex CLI公式ドキュメント](https://developers.openai.com/codex/cli)をご覧ください。ここでは便利な機能をいくつか紹介します。
 
 ## Web検索
 
