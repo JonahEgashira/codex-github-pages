@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ -x /opt/homebrew/opt/ruby@3.4/bin/ruby ]; then
+  export PATH="/opt/homebrew/opt/ruby@3.4/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
+elif [ -x /usr/local/opt/ruby@3.4/bin/ruby ]; then
+  export PATH="/usr/local/opt/ruby@3.4/bin:/usr/local/lib/ruby/gems/3.4.0/bin:$PATH"
+fi
+
+if ! command -v bundle >/dev/null 2>&1; then
+  echo "Bundler is not available. Install Ruby 3 first, then run: gem install bundler"
+  exit 1
+fi
+
+setup() {
+  bundle config set path vendor/bundle
+  bundle install
+}
+
+ensure_bundle() {
+  if ! bundle check >/dev/null 2>&1; then
+    setup
+  fi
+}
+
+case "${1:-serve}" in
+  setup)
+    setup
+    ;;
+  serve)
+    ensure_bundle
+    bundle exec jekyll serve --host "${HOST:-127.0.0.1}" --port "${PORT:-4000}"
+    ;;
+  build)
+    ensure_bundle
+    bundle exec jekyll build
+    ;;
+  audit)
+    ensure_bundle
+    bundle exec bundle-audit check --update
+    ;;
+  *)
+    echo "Usage: bin/jekyll-local [setup|serve|build|audit]"
+    exit 1
+    ;;
+esac

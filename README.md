@@ -17,21 +17,25 @@
 ## ローカル開発
 
 このリポジトリは GitHub Pages / Jekyll で公開する静的サイトです。
-npm の依存はありません。
-Ruby 3 系が必要です。Mac で Homebrew を使う場合は、以下のように `ruby@3.4` を優先してから Bundler を実行します。
+npm の依存はありませんが、見た目を確認しやすいように `npm run dev` からJekyllを起動できるようにしています。
+
+```bash
+npm run dev
+```
+
+起動したら `http://127.0.0.1:4000/codex-github-pages/` を開きます。
+初回はRuby gemのインストールが走るため少し時間がかかります。
+
+MacでRuby 3系が入っていない場合は、先に以下を実行してください。
 
 ```bash
 brew install ruby@3.4
-export PATH="/opt/homebrew/opt/ruby@3.4/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
-bundle config set path vendor/bundle
-bundle install
-bundle exec jekyll serve
 ```
 
 依存関係の脆弱性チェックは次のコマンドで実行できます。
 
 ```bash
-bundle exec bundle-audit check --update
+npm run audit:ruby
 ```
 
 ---

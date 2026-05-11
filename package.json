@@ -1,0 +1,10 @@
+{
+  "name": "codex-github-pages",
+  "private": true,
+  "scripts": {
+    "dev": "bin/jekyll-local serve",
+    "build": "bin/jekyll-local build",
+    "setup": "bin/jekyll-local setup",
+    "audit:ruby": "bin/jekyll-local audit"
+  }
+}
