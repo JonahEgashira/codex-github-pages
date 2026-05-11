@@ -18,13 +18,6 @@ Codex CLIとGitHubを活用してWebサイトを作成、公開する手法が�
 - 6. [Tips・検索・画像添付](./06-tips-and-tricks.md)
 - 7. [おわりに](./07-outro.md)
 
----
-
-↓講義中の質問やコメントはこちらへ↓
-### [掲示板](https://lecture-board.jonah-342.workers.dev/)
-
----
-
 開発に本格的に取り組んでみたい方は、GitHub Codespaces上ではなく手元のPCに環境を構築することをおすすめします。
 以下の記事ではローカルにGemini CLIを導入する方法を紹介しています。
 

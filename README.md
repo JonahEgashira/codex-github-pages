@@ -14,8 +14,25 @@
 
 ## [WebページURL](https://jonahegashira.github.io/codex-github-pages/)
 
-↓講義中の質問やコメントはこちらへ↓
-### [掲示板](https://lecture-board.jonah-342.workers.dev/)
+## ローカル開発
+
+このリポジトリは GitHub Pages / Jekyll で公開する静的サイトです。
+npm の依存はありません。
+Ruby 3 系が必要です。Mac で Homebrew を使う場合は、以下のように `ruby@3.4` を優先してから Bundler を実行します。
+
+```bash
+brew install ruby@3.4
+export PATH="/opt/homebrew/opt/ruby@3.4/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
+bundle config set path vendor/bundle
+bundle install
+bundle exec jekyll serve
+```
+
+依存関係の脆弱性チェックは次のコマンドで実行できます。
+
+```bash
+bundle exec bundle-audit check --update
+```
 
 ---
 

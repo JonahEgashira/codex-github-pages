@@ -155,8 +155,7 @@ GitHub Codespacesで、ChatGPTアカウントを使ってサインインする�
 ![api key](./images/api-key.png)
 
 ここの**API key**と書いてあるところに、APIキーをペーストしましょう。
-APIキーは[掲示板](https://lecture-board.jonah-342.workers.dev/)から取得できます。
-掲示板ページにアクセスする時はユーザーネームとパスワードが必要になります。その情報は講義中にスライドでお伝えします。
+APIキーを利用する場合は、講義中に案内される手順に従って取得してください。
 
 ![codex-ok](./images/codex-ok.png)
 
