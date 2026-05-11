@@ -141,14 +141,14 @@ codex
 
 ![codex logo](./images/codex.gif)
 
-ここで、ChatGPTの課金プランを利用している方は[1. ChatGPTの課金プランを利用する人](#1-chatgptの課金プランを利用する人)を、していない方は[2. APIキーを利用する人](#2-apiキーを利用する人)を参考に進めてください。
-課金プラン利用している方は、プランの範囲内で利用でき、追加の料金を取られることはありません。
+ここで認証方法を選びます。ChatGPT Plus、Pro、Business、Edu、Enterpriseなどの対象プランを利用している方は[1. ChatGPTアカウントでサインインする人](#1-chatgptアカウントでサインインする人)を、APIキーを利用する方は[2. APIキーを利用する人](#2-apiキーを利用する人)を参考に進めてください。
+ChatGPTアカウントでサインインする場合は、契約プランに含まれるCodex利用枠を使います。APIキーでサインインする場合は、OpenAI PlatformのAPI利用料金として課金されます。
 
-### 1. ChatGPTの課金プランを利用する人
-GitHub Codespacesで、ChatGPTアカウントを使ってサインインする時に、少し工夫が必要になります。
-以下の記事を参考に（講義中でも紹介します）サインインしてください。
+### 1. ChatGPTアカウントでサインインする人
 
-[GitHub Codespaces上でCodex CLIのライセンスを認証する方法](https://zenn.dev/haru_iida/articles/sign_in_codex_with_codespaces)
+Codex CLIを初めて起動すると、ChatGPTアカウントでサインインする案内が表示されます。
+画面に表示されるURLやコードに従って、ブラウザーで認証を完了してください。
+Codespaces上でブラウザーが自動で開かない場合も、表示されたURLをコピーして開けば進められます。
 
 ### 2. APIキーを利用する人
 
@@ -160,7 +160,7 @@ APIキーを利用する場合は、講義中に案内される手順に従っ�
 ![codex-ok](./images/codex-ok.png)
 
 成功すると、上記のような画面になります。
-失敗する場合はもう一度APIキーをペーストし直してみてください。
+失敗する場合は、APIキーのコピー漏れや、利用中のOpenAI Platformアカウントの設定を確認してください。
 
 # 重要：モデルの選択
 
