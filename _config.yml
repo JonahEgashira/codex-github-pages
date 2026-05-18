@@ -1,5 +1,7 @@
 title: AIエージェントでWebサイトをつくろう
-url: "https://jonahegashira.github.io"
-baseurl: "/codex-github-pages"
+url: "https://codex.keioaic.dev"
+baseurl: ""
 theme: jekyll-theme-slate
 markdown: GFM
+include:
+  - CNAME
