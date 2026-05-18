@@ -155,7 +155,38 @@ Codespaces上でブラウザーが自動で開かない場合も、表示され�
 ![api key](./images/api-key.png)
 
 ここの**API key**と書いてあるところに、APIキーをペーストしましょう。
-APIキーを利用する場合は、講義中に案内される手順に従って取得してください。
+APIキーを利用する場合は、講義中に案内される手順に従って取得してください。講義用APIキーが配布される場合は、下の欄に授業中に共有されたパスワードを入力すると表示できます。
+
+<div class="api-key-unlocker" data-api-key-unlocker data-key-url="{{ '/assets/data/class-api-key.enc.json' | relative_url }}">
+  <form data-api-key-form>
+    <label for="class-api-key-password">講義用APIキーのパスワード</label>
+    <div class="api-key-form-row">
+      <input id="class-api-key-password" type="password" autocomplete="off" data-api-key-password>
+      <button type="submit" data-api-key-submit>APIキーを表示</button>
+    </div>
+  </form>
+  <p class="api-key-status" data-api-key-status role="status" aria-live="polite"></p>
+  <div class="api-key-result" data-api-key-result hidden>
+    <label for="class-api-key-output">APIキー</label>
+    <div class="api-key-output-row">
+      <input id="class-api-key-output" type="text" readonly data-api-key-output>
+      <button type="button" data-api-key-copy>コピー</button>
+    </div>
+  </div>
+</div>
+
+<details markdown="1">
+<summary>講師向け：講義用APIキーを公開する手順</summary>
+
+授業前に、ローカルで次のコマンドを実行します。入力したAPIキーとパスワードは画面に表示されません。
+
+```bash
+node scripts/encrypt-class-api-key.mjs
+```
+
+作成された `assets/data/class-api-key.enc.json` をGitHub Pagesに公開すると、このページのフォームから復号できます。授業後はOpenAI Platform側で講義用APIキーを削除してください。
+
+</details>
 
 ![codex-ok](./images/codex-ok.png)
 

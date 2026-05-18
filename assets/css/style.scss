@@ -15,3 +15,88 @@ h1, h2, h3, h4, h5, h6 {
 code, pre {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 }
+
+.api-key-unlocker {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid #d8dee4;
+  border-radius: 8px;
+  background: #f6f8fa;
+}
+
+.api-key-unlocker label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+}
+
+.api-key-form-row,
+.api-key-output-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
+.api-key-unlocker input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #afb8c1;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.api-key-unlocker button {
+  flex: 0 0 auto;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid #1f6feb;
+  border-radius: 6px;
+  background: #1f6feb;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.api-key-unlocker button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.api-key-unlocker button[type="button"] {
+  border-color: #57606a;
+  background: #57606a;
+}
+
+.api-key-status {
+  min-height: 1.5em;
+  margin: 0.75rem 0 0;
+}
+
+.api-key-status[data-tone="success"] {
+  color: #116329;
+}
+
+.api-key-status[data-tone="error"] {
+  color: #b42318;
+}
+
+.api-key-result {
+  margin-top: 1rem;
+}
+
+.api-key-result[hidden] {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .api-key-form-row,
+  .api-key-output-row {
+    flex-direction: column;
+  }
+
+  .api-key-unlocker button {
+    width: 100%;
+  }
+}

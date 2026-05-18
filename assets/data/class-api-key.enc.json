@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "kind": "class-api-key",
+  "algorithm": "PBKDF2-SHA256+A256GCM",
+  "iterations": 250000,
+  "salt": "j1qfCdI+lcNyGnx4AyAi6g==",
+  "iv": "FwdpCRAaAYOuUl3B",
+  "ciphertext": "S4fEgVuK2/dy+MOvLYoCtXeSlauj/OlVkjiTGFX62BHRajS8Q0ule+vjBcs7BRXWrBCRZrD/6ca9E0Tf4BhKmzansiHeoGqDGEO7jjJP8CAu",
+  "updatedAt": "2026-05-18T05:20:41.286Z"
+}
