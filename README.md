@@ -37,10 +37,3 @@ brew install ruby@3.4
 ```bash
 npm run audit:ruby
 ```
-
----
-
-開発に本格的に取り組んでみたい方は、GitHub Codespaces上ではなく手元のPCに環境を構築することをおすすめします。
-以下の記事ではローカルにGemini CLIを導入する方法を紹介しています。
-
-- [ローカル環境構築](./local-setup.md)

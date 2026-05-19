@@ -2,6 +2,7 @@
 title: Local Setup
 layout: default
 permalink: /local-setup/
+published: false
 ---
 
 # 自分のPCでGemini CLIを使う
