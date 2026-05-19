@@ -45,10 +45,10 @@ Webページ上に画像を追加するには次のようにします。
 
 ![Dorachan](./images/dorachan.png)
 
-3. Codex CLIにファイル名（ここでは`dorachan.png`を伝え、Webサイトに追加するように依頼します）
+3. Codex CLIにファイル名（ここでは`dorachan.JPG`）を伝え、Webサイトに追加するように依頼します。
 
 ```bash
-user> dorachan.pngをHTMLに追加してください。
+user> dorachan.JPGをHTMLに追加してください。
 ```
 
 これでおそらく、Codex CLIが画像をHTMLに追加してくれるはずです。もしうまく行かない場合はちゃんと画像がファイルエクスプローラーに追加されているか、ファイル名がCodex CLIに伝えたものと同じか（厳密に同じでなくても、Codex CLIがコマンド操作によって近しいファイルを選択するはずですが）を確認してください。
