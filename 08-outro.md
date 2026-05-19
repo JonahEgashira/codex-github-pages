@@ -49,7 +49,7 @@ AIのおかげでプログラミングの敷居は下がりました。AIがど�
 
 ---
 
-前へ → [Codex CLI Tips](./06-tips-and-tricks.md)
+前へ → [Codex App](./07-codex-app.md)
 目次へ → [ホーム](./index.md)
 
 ---

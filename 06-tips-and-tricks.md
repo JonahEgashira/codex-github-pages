@@ -97,7 +97,7 @@ Codex CLIとの対話画面で`/`から始まるコマンドを入力するこ�
 ---
 
 前へ → [CSS/JavaScriptで拡張](./05-style-and-js.md)
-次へ → [おわりに](./07-outro.md)
+次へ → [Codex App](./07-codex-app.md)
 目次へ → [ホーム](./index.md)
 
 ---
