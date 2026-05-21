@@ -254,7 +254,7 @@ git commit -m "first commit"
 ---
 
 前へ → [Codex CLI Tips](./06-tips-and-tricks.md)
-次へ → [おわりに](./08-outro.md)
+次へ → [エージェント Tips](./08-agent-tips.md)
 目次へ → [ホーム](./index.md)
 
 ---

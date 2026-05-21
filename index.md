@@ -17,4 +17,5 @@ Codex CLIとGitHubを活用してWebサイトを作成、公開する手法が�
 - 5. [CSS/JavaScript で拡張](./05-style-and-js.md)
 - 6. [Tips・検索・画像添付](./06-tips-and-tricks.md)
 - 7. [Codex App](./07-codex-app.md)
-- 8. [おわりに](./08-outro.md)
+- 8. [エージェント Tips](./08-agent-tips.md)
+- 9. [おわりに](./09-outro.md)

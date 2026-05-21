@@ -49,7 +49,7 @@ AIによってプログラミングの敷居は下がりました。だからこ
 
 ---
 
-前へ → [Codex App](./07-codex-app.md)
+前へ → [エージェント Tips](./08-agent-tips.md)
 目次へ → [ホーム](./index.md)
 
 ---
