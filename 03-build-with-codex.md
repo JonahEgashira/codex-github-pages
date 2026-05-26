@@ -75,102 +75,13 @@ Codex CLIに自然言語で依頼をする場所と、ターミナルでコマ�
 
 ---
 
-# HTMLファイルをコミットする
+# HTMLファイルをGitHubへ送る
 
-Gitでは「**変更を記録する**」作業を*コミット*と呼びます。
-ここでは、Codex CLIが作成した`index.html`をGitHubへアップロードするまでの流れを説明します。
+作成した `index.html` をGitHubへ送ります。
+Gitでは「**変更を記録する**」作業を*コミット*、GitHubへ送る作業を*プッシュ*と呼びます。
 
-まず、`git`コマンドを入力するために、先ほど作成した**ターミナル**の画面で以下を入力します。
-
-![bash new](./images/bash.png)
-
-1. **変更内容を確認する**
-
-   ```bash
-   git status
-   ```
-
-   * 追加・更新されたファイルが赤字で表示されていればOKです。
-
-2. **ステージに追加する**
-
-   ```bash
-   git add index.html        # 1つだけ追加
-   ```
-
-   または
-
-   ```bash
-   git add .                 # 現在のディレクトリ以下をまとめて追加
-   ```
-
-   `git status`をもう一度実行すると、追加したファイルが緑色に変わります。これで「コミット候補」になりました。
-
-3. **コミットを作成する**
-
-   ```bash
-   git commit -m "Add initial index.html"
-   ```
-
-   * `-m`オプションで「何をしたか」を1行で書きます。
-   * 後から見返すときに分かりやすいよう、内容を簡潔にまとめましょう。
-
-4. **リモート（GitHub）へ反映（プッシュ）する**
-
-   ```bash
-   git push -u origin main
-   ```
-
-   * `-u`を付けておくと、次回以降は`git push`だけで済みます。
-   * GitHubでリポジトリを開き、`index.html`がアップロードされていれば成功です。
-   * pushに失敗する場合は、リモート設定（`git remote -v`）とブランチ名（`main`）を確認してください。
-
-![git-img](./images/git-img.png)
-
-### ここまでの流れのおさらい
-
-```bash
-git add .
-git commit -m "Add initial site"
-git push -u origin main
-```
-
-> **ポイント**
->
-> * *add → commit → push* の3段階を覚えれば、基本操作は大丈夫です。
-> * こまめなコミットは「戻れるポイント」を増やせるので、失敗しても安心です。
-
----
-
-## Codex CLIを使ってGit操作を行う
-
-Gitは **バージョン管理において必ず覚えておきたい操作** ですが、
-毎回 `git add . → git commit → git push` して、毎回メッセージを書くのは少し面倒ですよね。
-そこで、Git操作にもCodex CLIを使ってみましょう。
-
----
-
-### まずは適当なファイルの変更をする
-
-Codespacesの左側のファイルエクスプローラーを開き、先ほど作成されたHTMLファイルをクリックして開きます。
-
-![Change Title](./images/change-title.png)
-
-おそらく `<title></title>` で囲われた部分があると思います。
-
-その部分を手動で以下のように変更します（「私のWebページ」の部分は他の内容でも構いません）。
-
-```html
-<title>私のWebページ</title>
-```
-
-これで変更は完了です。次に、Codex CLIで変更をGitで管理しましょう。
-
----
-
-### 1行でpushまでを丸投げ
-
-次のように依頼をすると、今回のファイル変更を一連の流れで `git add`, `git commit`, `git push` まで行うことができます。
+本講義では、細かいGitコマンドはCodex CLIに任せます。
+Codex CLIのタブに戻り、次のように依頼してください。
 
 ```bash
 user> 変更を確認してpushしてください
@@ -183,14 +94,41 @@ Pushにはネットワークアクセスが必要なため、Codexが許可を�
 
 ![Codex commit push](./images/push.png)
 
-これでadd, commit, pushまで完了です。
+これで、変更の確認、コミット、GitHubへのpushまで完了です。
+GitHubでリポジトリのページを開き、`index.html` が表示されていれば成功です。
 
 > **ポイント**
 > Codex CLIは *「ユーザーの意図 → 具体的なGitコマンド」* を橋渡ししてくれます。
-> **コマンドの暗記やタイプミスに悩まされず、作業スピードも向上します**（ただし、最低限 add・commit・push は覚えておきましょう）
+> 今日の講義では、Git操作は基本的に `変更を確認してpushしてください` と頼めばOKです。
 
-これで Git の日常的なルーチン作業はほぼ Codex CLI に任せられます。
-浮いた時間と集中力を **コンテンツ制作やデザイン改善** に充てましょう。
+Codexの裏側では、だいたい次の3段階の操作が行われています。
+
+1. **add**: どの変更を記録するか選ぶ
+2. **commit**: 変更を記録する
+3. **push**: 記録した変更をGitHubへ送る
+
+この3つの名前だけ覚えておくと、あとでGitを学ぶときに理解しやすくなります。
+
+<details markdown="1">
+<summary>参考：手動でGit操作を行う場合</summary>
+
+Codexに頼らず自分で行う場合は、通常のターミナルで次の流れを実行します。
+
+```bash
+git status
+git add .
+git commit -m "Add initial site"
+git push -u origin main
+```
+
+* `git status` は変更内容の確認です。
+* `git add .` は現在のフォルダー以下の変更をまとめて記録候補にします。
+* `git commit -m "..."` は変更を記録します。
+* `git push -u origin main` はGitHubへ送信します。
+
+今すぐ全部覚える必要はありません。今日の作業では、Codex CLIに任せて進めましょう。
+
+</details>
 
 ---
 
