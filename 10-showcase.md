@@ -21,9 +21,58 @@ title: 制作物発表
 ## みんなの作品
 
 <div class="showcase-list">
-  <article class="showcase-item showcase-item--placeholder">
-    <h3>掲載準備中</h3>
-    <p>提出された作品を確認したあと、ここに作品名・URL・コメントを追加します。</p>
+  <article class="showcase-item">
+    <h3>keisuke-itoh</h3>
+    <p><strong>作者:</strong> k2co3-0803-n</p>
+    <p><a href="https://k2co3-0803-n.github.io/keisuke-itoh/" target="_blank" rel="noopener noreferrer">作品を見る</a></p>
+  </article>
+
+  <article class="showcase-item">
+    <h3>shotaro-takeuchi</h3>
+    <p><strong>作者:</strong> k2co3-0803-n</p>
+    <p><a href="https://k2co3-0803-n.github.io/shotaro-takeuchi/" target="_blank" rel="noopener noreferrer">作品を見る</a></p>
+  </article>
+
+  <article class="showcase-item">
+    <h3>ayakaa07 のWebページ</h3>
+    <p><strong>作者:</strong> ayakaa07</p>
+    <p><a href="https://ayakaa07.github.io/webpage/" target="_blank" rel="noopener noreferrer">作品を見る</a></p>
+  </article>
+
+  <article class="showcase-item">
+    <h3>chocomintgonzalezeziso のWebページ</h3>
+    <p><strong>作者:</strong> chocomintgonzalezeziso</p>
+    <p><a href="https://chocomintgonzalezeziso.github.io/webpage/" target="_blank" rel="noopener noreferrer">作品を見る</a></p>
+  </article>
+
+  <article class="showcase-item">
+    <h3>hayachan26 のWebページ</h3>
+    <p><strong>作者:</strong> hayachan26</p>
+    <p><a href="https://hayachan26.github.io/webpage/" target="_blank" rel="noopener noreferrer">作品を見る</a></p>
+  </article>
+
+  <article class="showcase-item">
+    <h3>shosukefreebird-cmd のWebページ</h3>
+    <p><strong>作者:</strong> shosukefreebird-cmd</p>
+    <p><a href="https://shosukefreebird-cmd.github.io/WebPage/" target="_blank" rel="noopener noreferrer">作品を見る</a></p>
+  </article>
+
+  <article class="showcase-item">
+    <h3>kanonn07 のWebページ</h3>
+    <p><strong>作者:</strong> kanonn07</p>
+    <p><a href="https://kanonn07.github.io/webpage/" target="_blank" rel="noopener noreferrer">作品を見る</a></p>
+  </article>
+
+  <article class="showcase-item">
+    <h3>kurichan26 のWebページ</h3>
+    <p><strong>作者:</strong> kurichan26</p>
+    <p><a href="https://kurichan26.github.io/webpage/" target="_blank" rel="noopener noreferrer">作品を見る</a></p>
+  </article>
+
+  <article class="showcase-item">
+    <h3>Disney</h3>
+    <p><strong>作者:</strong> a-mi-1time</p>
+    <p><a href="https://a-mi-1time.github.io/webpage/disney.html" target="_blank" rel="noopener noreferrer">作品を見る</a></p>
   </article>
 </div>
 
