@@ -284,7 +284,7 @@ Codex app には **Automations**（自動化）という機能があります。
 ---
 
 前へ → [Codex App](./07-codex-app.md)
-次へ → [おわりに](./09-outro.md)
+次へ → [制作物発表](./10-showcase.md)
 目次へ → [ホーム](./index.md)
 
 ---

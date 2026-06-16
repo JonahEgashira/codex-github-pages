@@ -90,6 +90,46 @@ code, pre {
   display: none;
 }
 
+.submission-button {
+  display: inline-block;
+  margin: 0.5rem 0 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  background: #1f6feb;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.submission-button:hover,
+.submission-button:focus {
+  color: #fff;
+  background: #0a58ca;
+  text-decoration: none;
+}
+
+.showcase-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.showcase-item {
+  padding: 1rem;
+  border: 1px solid #d8dee4;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.showcase-item h3 {
+  margin-top: 0;
+}
+
+.showcase-item--placeholder {
+  background: #f6f8fa;
+  color: #57606a;
+}
+
 @media (max-width: 640px) {
   .api-key-form-row,
   .api-key-output-row {
