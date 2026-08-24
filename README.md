@@ -17,6 +17,25 @@
 
 ## [WebページURL](https://codex.keioaic.dev/)
 
+## 講義用APIキーの公開
+
+1. [OpenAI Platform の API keys](https://platform.openai.com/api-keys) で講義用のAPIキーを作成し、その場でコピーします。
+2. ローカルで暗号化ファイルを作ります。APIキーとパスワードは入力しても画面に表示されません。
+
+```bash
+node scripts/encrypt-class-api-key.mjs
+```
+
+3. 作成された `assets/data/class-api-key.enc.json` だけを公開します。
+
+```bash
+git add assets/data/class-api-key.enc.json
+git commit -m "Update class API key"
+git push
+```
+
+公開後は `02-github-codex.md` のフォームで、設定したパスワードを入れるとAPIキーを表示できます。平文のAPIキーはGitHubに置かず、授業後はOpenAI Platformで講義用キーを削除します。
+
 ## ローカル開発
 
 このリポジトリは GitHub Pages / Jekyll で公開する静的サイトです。
