@@ -8,7 +8,9 @@
 - Codex CLI を開く
 - プロンプトを入力する
 - `index.html` ができる
-- `python3 -m http.server 5500` で確認する
+- `/permissions` で `Full Access` を選ぶ
+- CodexにPythonサーバーの起動を頼む
+- 転送されたポートをブラウザーで開く
 - push する
 - Pages を有効化する
 - 公開 URL を開く

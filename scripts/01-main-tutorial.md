@@ -62,9 +62,9 @@ Codex CLI を使って、GitHub Pages にサイトを公開するところまで
 ### Scene 5
 
 - Narration: ブラウザーで確認する
-- On Screen: `python3 -m http.server 5500`
-- Action: ローカルで開いて表示
-- Asset: `images/github-http.png`
+- On Screen: `/permissions`、`Full Access`、Codexへのサーバー起動依頼
+- Action: CodexにPythonサーバーを起動してもらい、転送されたポートを開く
+- Asset: `images/permissions-command.png`, `images/permissions-full-access.png`, `images/codex-python-server.png`, `images/codespaces-port-open.png`
 - Note: 表示成功の瞬間をしっかり見せる
 
 ### Scene 6

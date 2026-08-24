@@ -30,48 +30,70 @@ user> このリポジトリは、GitHub Pagesで公開する自分のWebサイ�
 
 ## HTMLページを確認する
 
-作成したHTMLページの内容を確認してみましょう。
-まずはじめに、新しいターミナルの画面を作成します。
+作成したHTMLページをブラウザーで確認してみましょう。
+今回はコマンドを自分で入力せず、**Codexにサーバーの起動をお願いします。**
 
-ターミナルの右上の「＋」を押します。
+### 1. Codexの権限を変更する
 
-![codespace-bash](./images/plus.png)
+GitHub Codespacesでは、通常の権限のままだとサーバーの起動やポート転送がうまくいかないことがあります。
+この講義では、先にCodexの権限を変更します。
 
-bashと表示されて新しい画面になったことを確認します。ここで以下の`python`コマンドを入力します。
+Codexを起動している画面で、次のコマンドを入力してください。
 
-![bash-new](./images/bash.png)
-
-ターミナルで以下のコマンドを入力してください。
-
-```bash
-python3 -m http.server 5500
+```text
+/permissions
 ```
 
-![HTTP](./images/github-http.png)
+![permissions-command](./images/permissions-command.png)
 
-**ブラウザーで開く** をクリックすると、現状のHTMLファイルが確認できます。
-もしくはターミナル上の`http://0.0.0.0:5500/`を、Macであれば⌘+クリック、WindowsであればCtrl+クリックで開くことができます。
+上下の矢印キーで `Full Access` に移動し、Enterキーを押します。
 
-このPythonコマンドでは簡易なWebサーバーを立ち上げ、今いるフォルダーの中身をHTTPで配信しています。
-停止するには、サーバーを起動しているターミナルで `Ctrl + C` を押してください。
+![permissions-full-access](./images/permissions-full-access.png)
+
+> **注意：Full Accessは強い権限です**
+>
+> Full Accessにすると、Codexが確認なしで多くの操作をできるようになります。便利な反面、意図しない操作につながる可能性もあります。この先、自分で使うときは内容をよく確認し、慎重に選びましょう。
+
+### 2. Codexにサーバーの起動を頼む
+
+続けて、Codexに次のように入力してください。
+
+```bash
+user> HTMLを確認したいからPythonでサーバーを立てて。
+```
+
+![codex-python-server](./images/codex-python-server.png)
+
+Codexが必要なコマンドを考えて、Pythonの簡易Webサーバーを起動します。
+このサーバーは、作成したHTMLをブラウザーに表示するためのものです。
+
+### 3. ブラウザーで開く
+
+サーバーが起動すると、画面の右下にポートの通知が表示されます。
+
+![codespaces-port-open](./images/codespaces-port-open.png)
+
+**ブラウザーで開く** をクリックすると、作成したHTMLページが表示されます。
+「公開用にする」は押さなくて大丈夫です。
+
+確認が終わったら、Codexに次のように頼んでサーバーを停止します。
+
+```bash
+user> Pythonのサーバーを止めて。
+```
 
 【トラブルシュート】
 
-* 5500番ポートが使用中なら `python3 -m http.server 5501` など別ポートに変更
-* 「Open in Browser」が出ない場合は、VS Code（Codespaces）の「PORTS」タブから該当ポートを手動で開く
+* サーバーが起動しない場合は、`Full Access` になっているか確認してから、もう一度Codexに頼む
+* 「ブラウザーで開く」が出ない場合は、VS Code（Codespaces）の「ポート」タブから該当ポートを開く
 * 画面が更新されない時はファイル保存とブラウザーのリロードを確認
 
 ---
 
-## Codex CLIとターミナルの切り替え
+## コマンドはCodexに任せる
 
-Codex CLIに自然言語で依頼をする場所と、ターミナルでコマンドを入力する場所は異なります。
-
-`npm`や`node`と表示されることがあるタブがCodex CLI（対話用）で、`bash`と書かれているタブが通常のターミナル（コマンド実行用）です。
-`user>`と先頭に書かれている文書/指示はCodex CLIに入力し、それ以外のコマンドはターミナル上で入力・実行します。
-
-![Codex NPM](./images/codex-npm.png)
-*Codex CLIが開かれている状態*
+この講義では、コマンドを覚えて自分で入力するよりも、まずCodexに「何をしたいか」を伝えます。
+Codexが実行するコマンドも画面に表示されるので、少しずつ意味を確認していきましょう。
 
 ---
 

@@ -9,7 +9,10 @@
 - `images/codespace-vscode.png`
 - `images/codex-start.png`
 - `images/index-codex.png`
-- `images/github-http.png`
+- `images/permissions-command.png`
+- `images/permissions-full-access.png`
+- `images/codex-python-server.png`
+- `images/codespaces-port-open.png`
 - `images/commit.png`
 - `images/push.png`
 - `images/pages-main.png`
